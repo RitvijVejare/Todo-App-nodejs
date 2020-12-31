@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 //Connect to database
 
-mongoose.connect('mongodb+srv://Ritvij:Ritvij@todo-app.jzk93.mongodb.net/<dbname>?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://<username>:<password>@todo-app.jzk93.mongodb.net/<dbname>?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true })
 
 //Creating a schema/blueprint for data
 
