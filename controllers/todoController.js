@@ -1,9 +1,11 @@
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var dotenv = require('dotenv');
+dotenv.config();
 
 //Connect to database
 
-mongoose.connect("mongodb+srv://<username>:<password>@todo-app.jzk93.mongodb.net/<dbname>?retryWrites=true&w=majority",{ useNewUrlParser: true,useUnifiedTopology: true },function(err){
+mongoose.connect(`${process.env.uri}`,{ useNewUrlParser: true,useUnifiedTopology: true },function(err){
     if (err){
         console.log(err);
     }else{
